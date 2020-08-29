@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 
 const HeaderStyle = styled.header`
+    a:hover {
+        color: #3b5998;
+        transition: all 0.3s ease-out;
+    }
+    
+    
     .menu-btn {
         position: absolute;
         z-index: 3;
@@ -9,20 +15,19 @@ const HeaderStyle = styled.header`
         top: 35px;
         cursor: pointer;
 
-        &:hover {
-            color: #3b5998;
-            transition: all 0.5s ease-out;
-        }
+
 
         .btn-line {
             width: 28px;
             height: 3px;
             margin: 0 0 5px 0;
             background: #fff;
-            &: hover {
-                color: #3b5998;
-                transition: all 0.5s ease-out;
+            transition: all 0.3s ease-out;
+            &:hover {
+                background: #3b5998;
+                transition: all 0.1s ease-out;
             }
+
         }
 
         &.close {
@@ -71,9 +76,27 @@ const HeaderStyle = styled.header`
         &-nav {
             margin: 0;
             padding: 0;
-            background: rgb(68, 68, 70);
+            background: rgb(68, 68, 90);
             list-style: none;
+            transform: translate3d(0, -100%, 0);
+            transition: all 0.5s ease-out;
+
+            &.show {
+                //slide from top
+                transform: translate3d(0, 0, 0);
+            }
         }
+
+        &-branding {
+            background: rgb(68, 68, 68);
+            transition: all 0.5s ease-out;
+            transform: translate3d(0, 100%, 0);
+            &.show {
+                //slide from bottom
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
     }
 
 
