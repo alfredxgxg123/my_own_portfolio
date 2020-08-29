@@ -49,11 +49,30 @@ const HeaderStyle = styled.header`
         position: fixed;
         top: 0;
         width: 100%;
-        opacity: 0.9;
+        opacity: 0.7;
         visibility: hidden;
 
         &.show {
             visibility: visible;
+        }
+
+        &-branding,
+        &-nav {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            width: 50%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        &-nav {
+            margin: 0;
+            padding: 0;
+            background: rgb(68, 68, 70);
+            list-style: none;
         }
     }
 
