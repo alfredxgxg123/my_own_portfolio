@@ -4,7 +4,13 @@ function mediaSm() {
     let styles = '';
     styles = `
         @media screen and (max-width: 500px) {
-            @content;
+            main{
+                &#home {
+                    h1{
+                        margin-top: 10vh;
+                    }
+                }
+            }
         }
     `
     return css`${styles}`;
@@ -25,6 +31,33 @@ function mediaMd() {
                     margin-bottom: 1rem;
                 }
             }
+
+            ul.menu-nav,
+            div.menu-branding {
+                float: none;
+                width: 100%;
+                min-height: 0;
+
+                &.show {
+                    transform: translate3d(0,0,0);
+                }
+            }
+
+            .menu-nav {
+                height: 75vh;
+                transform: translate3d(-100%,0,0);
+                font-size: 24px;
+            }
+
+            .menu-branding {
+                height: 25vh;
+                transform: translate3d(100%,0,0);
+
+                .portrait {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
         }
     `
     return css`${styles}`;
@@ -35,7 +68,7 @@ function mediaLg() {
     let styles = '';
     styles = `
         @media screen and (min-width: 769px) and (max-width:1170px) {
-            @content;
+            //
         }
     `
     return css`${styles}`;
@@ -46,7 +79,7 @@ function mediaXL() {
     let styles = '';
     styles = `
         @media screen and (min-width: 1171px) {
-            @content;
+            //
         }
     `
     return css`${styles}`;
