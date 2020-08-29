@@ -1,8 +1,16 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+
+const animate = keyframes`
+    from {             
+        transform: translate3d(-200%, 0, 0);
+        transition: all 0.5s ease-out; 
+    }
+    to { transform: translate3d(0, 0, 0); }
+`;
 
 
 const MainStyle = styled.main`
-
+    
     padding: 4rem;
     min-height: calc(100vh - 60px);
 
@@ -27,7 +35,7 @@ const MainStyle = styled.main`
     
     .icons {
         margin-top: 1rem;
-
+        animation: ${animate} 2s;
         a {
             padding: 0.4rem;
             &: hover {
@@ -38,6 +46,7 @@ const MainStyle = styled.main`
     }
 
     h1, h2, h3 {
+        animation: ${animate} 2s;
         &: hover {
             color: #3b5998;
             transition: all 0.6s ease-out;

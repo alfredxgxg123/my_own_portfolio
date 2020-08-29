@@ -1,5 +1,12 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
+const animate = keyframes`
+    from {             
+        transform: translate3d(-200%, 0, 0);
+        transition: all 0.5s ease-out; 
+    }
+    to { transform: translate3d(0, 0, 0); }
+`;
 
 const MyProjectsStyle = styled.main`
 
@@ -20,6 +27,7 @@ const MyProjectsStyle = styled.main`
     
 
     h1, h2, h3 {
+        animation: ${animate} 2s;
         &: hover {
             color: #3b5998;
             transition: all 0.6s ease-out;
@@ -44,12 +52,13 @@ const MyProjectsStyle = styled.main`
     }
 
     .about-info {
+        animation: ${animate} 2s;
         display: grid;
         grid-gap: 30px;
         grid-template-areas: 
         'bioimage bio bio'
         'job1 job2 job3';
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
         .bio-image{
             grid-area: bioimage;
@@ -78,7 +87,7 @@ const MyProjectsStyle = styled.main`
         }
     
         .job {
-            background: rgb(68, 68, 100);
+            background: rgb(68, 68, 68);
             padding: 0.5rem;
             border-bottom: grey 3px solid;
         }

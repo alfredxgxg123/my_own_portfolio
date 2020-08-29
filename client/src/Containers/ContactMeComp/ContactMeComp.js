@@ -3,8 +3,7 @@ import axios from 'axios';
 
 import ContactMeStyle from './ComtactMeComp.css';
 
-const ContactMeComp = () => {
-
+const ContactMeComp = (props) => {
     const [state, setState] = useState({
         name: '',
         email: '',
@@ -36,46 +35,43 @@ const ContactMeComp = () => {
             }
           })
     }
-    
-    return (
-        <ContactMeStyle id="Contact">
-            <h1 className="lg-heading">
-                Contact { } Me
-            </h1>
-            <h2 className="sm-heading"> 
-                Send me a message &#128513;
-            </h2>
 
-            <div className="boxes">
-                <div>
-                    <span className="text-secondary">Email: </span>
-                    alfredguan9@gmail.com
+    return (
+        <ContactMeStyle id="Contacting"> 
+            <div className={props.match.path == "/Contact_Me" ? "wrapper" + "-show" : "wrapper"  }>
+                <div className="company-info">
+                    <h3>Contact { } Me &#128513;</h3>
+                    <h5>
+                        <span className="text-secondary"><i className="fa fa-phone"></i>: </span>
+                        (415) 680-8781
+                    </h5>
                 </div>
-                <div>
-                    <span className="text-secondary">Phone: </span>
-                    (415) 680-8781
+                <div className="contact">
+                    <form method="POST" onSubmit={handleSubmit}>
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name" onChange={onHandleChnage}/>
+                        </p>
+                        <p>
+                            <label>Email Address</label>
+                            <input type="email" name="email"  onChange={onHandleChnage}/>
+                        </p>
+                        <p className="full">
+                            <label>Message</label>
+                            <textarea name="message" rows="10"  onChange={onHandleChnage}></textarea>
+                        </p>
+                        <p className="full">
+                            <button type="submit" disabled={!state.email || !state.name || !state.message} className="btn btn-primary">Submit</button>
+                        </p>
+                    </form>
                 </div>
             </div>
-
-            {/* <div className="container">
-                <form id="contact-form" onSubmit={handleSubmit} method="POST">
-                    <div className="form-group">
-                        <label htmlFor="name">Name</label>
-                        <input type="text" className="form-control" name="name" onChange={onHandleChnage}/>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Email address</label>
-                        <input type="text" className="form-control" name="email" aria-describedby="emailHelp" onChange={onHandleChnage}/>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="message">Message</label>
-                        <textarea className="form-control" rows="10" name="message" onChange={onHandleChnage}></textarea>
-                    </div>
-                    <button type="submit" disabled={!state.email || !state.name || !state.message} className="btn btn-primary">Submit</button>
-                </form>
-            </div> */}
         </ContactMeStyle>
     )
 }
 
 export default ContactMeComp;
+
+
+
+

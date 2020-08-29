@@ -51,7 +51,7 @@ class App extends React.Component {
         <Switch>
           <Route path="/About_Me" exact component={AboutMeComp} />
           <Route path="/My_Projects" exact component={MyProjectsComp} />
-          <Route path="/Contact_Me" exact component={ContactMeComp} />
+          <Route path="/Contact_Me"  exact component={ContactMeComp} />
           <Route path="/" component={MainComp} />
         </Switch>
         <footer id="main-footer">

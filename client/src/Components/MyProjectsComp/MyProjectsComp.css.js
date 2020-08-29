@@ -1,4 +1,12 @@
-import styled, {css} from 'styled-components';
+import styled, {css, keyframes} from 'styled-components';
+
+const animate = keyframes`
+    from {             
+        transform: translate3d(-200%, 0, 0);
+        transition: all 0.5s ease-out; 
+    }
+    to { transform: translate3d(0, 0, 0); }
+`;
 
 
 const MyProjectsStyle = styled.main`
@@ -20,6 +28,7 @@ const MyProjectsStyle = styled.main`
     
 
     h1, h2, h3 {
+        animation: ${animate} 2s;
         &: hover {
             color: #3b5998;
             transition: all 0.6s ease-out;
@@ -45,6 +54,7 @@ const MyProjectsStyle = styled.main`
 
    
     .projects {
+        animation: ${animate} 2s;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 0.7rem;

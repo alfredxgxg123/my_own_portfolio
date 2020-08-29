@@ -1,4 +1,12 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+
+const animate = keyframes`
+    from {             
+        transform: translate3d(-200%, 0, 0);
+        transition: all 0.5s ease-out; 
+    }
+    to { transform: translate3d(0, 0, 0); }
+`;
 
 const ContactMeStyle = styled.main`
 
@@ -16,21 +24,6 @@ const ContactMeStyle = styled.main`
         position: fixed;
         opacity: 0.7;
     }
-
-    .boxes {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 1rem;
-
-        div {
-            font-size: 2rem;
-            border: 3px #fff solid;
-            padding: 1.5rem 2.5rem;
-            margin-bottom: 3rem;
-        }
-    }
     
 
     h1, h2, h3 {
@@ -43,22 +36,61 @@ const ContactMeStyle = styled.main`
         }
         margin: 0;
         font-weight: 400;
-
-        &.lg-heading {
-            font-size: 4rem;
-        }
-
-        &.sm-heading {
-            margin-bottom: 2rem;
-            padding: 0.2rem 1rem;
-            opacity: 0.8;
-
-            a:hover {
-                color: #3b5998;
-                transition: all 0.6s ease-out;
-            }
-        }
     }
+
+
+    .wrapper-show {
+        box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+        max-width: 450px;
+        height: auto;
+        margin: auto;
+        animation: ${animate} 2s;
+    }
+
+
+    .wrapper-show > *{
+        padding: 1em;
+    }
+
+    .company-info h3, h5{
+        text-align: center;
+        margin:0 0 1rem 0;
+    }
+
+
+    .contact form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:20px;
+    }
+
+    .contact form label{
+        display:block;
+    }
+
+    .contact form p{
+        margin:0;
+    }
+
+    .contact form button, .contact form input, .contact form textarea{
+        width:100%;
+        padding:1em;
+        border:1px solid #c9e6ff;
+    }
+
+    .contact form button{
+        background:#c9e6ff;
+        border:0;
+        text-transform: uppercase;
+    }
+
+    .contact form button:hover,.contact form button:focus{
+        background:#92bde7;
+        color:#fff;
+        outline:0;
+        transition: background-color 2s ease-out;
+    }
+
    
 `;
 

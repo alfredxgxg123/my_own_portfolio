@@ -20,7 +20,7 @@ const MyProjectsComp = () => {
                     </a>
                     <a href="#" className="btn-light">
                         <i className="fas fa-eye"></i> { }
-                        Project bitztream
+                        bitztream
                     </a>
                     <a href="https://github.com/bitztream/videoplayer-comp" className="btn-dark">
                         <i className="fas fa-github"></i> { }
@@ -33,7 +33,7 @@ const MyProjectsComp = () => {
                     </a>
                     <a href="#" className="btn-light">
                         <i className="fas fa-eye"></i> { }
-                        Project Bungal-ow
+                        Bungal-ow
                     </a>
                     <a href="https://github.com/Bungal-ow/Contacts" className="btn-dark">
                         <i className="fab fa-github"></i> { }
@@ -46,7 +46,7 @@ const MyProjectsComp = () => {
                     </a>
                     <a href="#" className="btn-light">
                         <i className="fas fa-eye"></i> { }
-                        Project EcomFull
+                        EcomFull
                     </a>
                     <a href="https://github.com/alfredxgxg123/EcomFull" className="btn-dark">
                         <i className="fab fa-github"></i> { }
@@ -59,7 +59,7 @@ const MyProjectsComp = () => {
                     </a>
                     <a href="#" className="btn-light">
                         <i className="fas fa-eye"></i>  { }
-                        Project RecipeBank
+                        RecipeBank
                     </a>
                     <a href="https://github.com/alfredxgxg123/miniRecipeBank" className="btn-dark">
                         <i className="fab fa-github"></i> { }
