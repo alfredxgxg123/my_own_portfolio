@@ -54,7 +54,7 @@ const HeaderStyle = styled.header`
         position: fixed;
         top: 0;
         width: 100%;
-        opacity: 0.7;
+        opacity: 0.9;
         visibility: hidden;
 
         &.show {
@@ -93,6 +93,22 @@ const HeaderStyle = styled.header`
             transform: translate3d(0, 100%, 0);
             &.show {
                 //slide from bottom
+                transform: translate3d(0, 0, 0);
+            }
+            .portrait {
+                background:url(https://pcituress.s3-us-west-1.amazonaws.com/123123.jpg);
+                width: 250px;
+                height: 250px;
+                background-size: cover;
+                border-radius: 50%;
+                border: solid 3px black;
+            }
+        }
+
+        .nav-item {
+            transform: translate3d(600px, 0, 0);
+            transition: all 0.5s ease-out;
+            &.show {
                 transform: translate3d(0, 0, 0);
             }
         }
