@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainStyle } from './MainComp.css.js';
+import MainStyle from './MainComp.css.js';
 
 const MainComp = () => {
     return (

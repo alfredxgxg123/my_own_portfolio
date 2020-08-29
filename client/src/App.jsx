@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeaderComp from './Components/HeaderComp';
-import MainComp from './Components/MainComp';
+import { Route, Switch } from 'react-router-dom';
+
+import HeaderComp from './Components/HeaderComp/HeaderComp';
+import MainComp from './Components/MainComp/MainComp';
+import AboutMeComp from './Components/AboutMeComp/AboutMeComp';
 import {mediaSm, mediaMd, mediaLg, mediaXL} from './reponsive.css';
+
 
 const AppDev = styled.div`
   a {
@@ -14,6 +18,15 @@ const AppDev = styled.div`
     position: fixed;
     z-index: 2;
     width: 100%;
+  }
+  #main-footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.8em;
+    color: #fff;
+    height: 60px; 
+    width: 100%;
+    bottom:0;
   }
 
   ${mediaSm()}
@@ -33,7 +46,13 @@ class App extends React.Component {
     return (
       <AppDev>
         <HeaderComp />  
-        <MainComp />
+        <Switch>
+          <Route path="/About_Me" exact component={AboutMeComp} />
+          <Route path="/" component={MainComp} />
+        </Switch>
+        <footer id="main-footer">
+          Copyright &copy; 2020
+        </footer>
       </AppDev>
     );
   }

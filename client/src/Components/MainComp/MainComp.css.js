@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const MainStyle = styled.main`
 
     padding: 4rem;
-    height: 100%;
+    min-height: calc(100vh - 60px);
 
     &:after {
         content: '';
@@ -58,5 +58,5 @@ const MainStyle = styled.main`
 
 `;
 
-export {MainStyle};
+export default MainStyle;
 

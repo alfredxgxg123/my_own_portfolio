@@ -58,6 +58,16 @@ function mediaMd() {
                     height: 150px;
                 }
             }
+
+            .about-info {
+                grid-template-areas: 
+                'bioimage'
+                'bio'
+                'job1'
+                'job2'
+                'job3';
+                grid-template-columns: 1fr;
+            }
         }
     `
     return css`${styles}`;

@@ -47,23 +47,23 @@ const HeaderComp = () => {
                     <div className="portrait"></div>
                 </div>
                 <ul className="menu-nav">
-                    <li className="nav-item">
+                    <li className="nav-item current">
                         <a href="/" className="nav-link">
                             Home
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="/about.html" className="nav-link">
+                        <a href="About_Me" className="nav-link">
                             About Me
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="/work.html" className="nav-link">
+                        <a href="My_Projects" className="nav-link">
                             My Projects
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="/contact.html" className="nav-link">
+                        <a href="Contact_Me" className="nav-link">
                             Contact Me
                         </a>
                     </li>
