@@ -1,8 +1,10 @@
 import React from 'react';
 
+import HeaderStyle from './HeaderComp.css';
+
 const HeaderComp = () => {
     return (
-        <header>
+        <HeaderStyle>
             <div className="menu-btn">
             <div className="btn-line"></div>
             <div className="btn-line"></div>
@@ -36,7 +38,7 @@ const HeaderComp = () => {
                 </li>
             </ul>
             </nav>
-        </header>
+        </HeaderStyle>
     )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeaderComp from './HeaderComp';
-import MainComp from './MainComp';
+import HeaderComp from './Components/HeaderComp';
+import MainComp from './Components/MainComp';
 
 const AppDev = styled.div`
   a {
