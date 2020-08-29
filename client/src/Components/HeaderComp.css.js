@@ -44,6 +44,18 @@ const HeaderStyle = styled.header`
         }
     }
     
+    //overlay
+    .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        opacity: 0.9;
+        visibility: hidden;
+
+        &.show {
+            visibility: visible;
+        }
+    }
 
 
     
