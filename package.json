@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "buildDev": "webpack -d --watch ",
-    "start": "nodemon server/index.js"
+    "startdev": "nodemon server/index.js",
+    "startPro": "node server/index.js",
+    "buildPro": "webpack -d",
+    "start": "npm install && npm run buildPro && npm run startPro",
+    "deploy": "gh-pages -d client/dist"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +27,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "gh-pages": "^3.1.0",
     "jquery": "^3.5.1",
     "mysql": "^2.18.1",
     "nodemailer": "^6.4.11",
