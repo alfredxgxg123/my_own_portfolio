@@ -59,7 +59,6 @@ const MyProjectsStyle = styled.main`
             }
         }
 
-
     
     }
     .btn-dark {
@@ -69,9 +68,6 @@ const MyProjectsStyle = styled.main`
     .btn-light{
         ${btn()}
     }
-
-
-
 `;
 
 function btn(){

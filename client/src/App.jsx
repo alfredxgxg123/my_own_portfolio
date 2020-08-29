@@ -6,7 +6,7 @@ import HeaderComp from './Components/HeaderComp/HeaderComp';
 import MainComp from './Components/MainComp/MainComp';
 import AboutMeComp from './Components/AboutMeComp/AboutMeComp';
 import MyProjectsComp from './Components/MyProjectsComp/MyProjectsComp';
-
+import ContactMeComp from './Containers/ContactMeComp/ContactMeComp';
 import {mediaSm, mediaMd, mediaLg, mediaXL} from './reponsive.css';
 
 
@@ -51,7 +51,7 @@ class App extends React.Component {
         <Switch>
           <Route path="/About_Me" exact component={AboutMeComp} />
           <Route path="/My_Projects" exact component={MyProjectsComp} />
-          <Route path="/Contact_Me" exact component={MainComp} />
+          <Route path="/Contact_Me" exact component={ContactMeComp} />
           <Route path="/" component={MainComp} />
         </Switch>
         <footer id="main-footer">

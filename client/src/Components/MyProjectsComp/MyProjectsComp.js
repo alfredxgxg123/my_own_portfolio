@@ -15,54 +15,54 @@ const MyProjectsComp = () => {
 
             <div className="projects">
                 <div className="item">
-                    <a href="#!">
+                    <a href="https://github.com/bitztream/videoplayer-comp">
                         <img src="https://pcituress.s3-us-west-1.amazonaws.com/pexels-faaiq-ackmerd-1025469.jpg" alt="Project"/>
                     </a>
-                    {/* <a href="#" className="btn-light">
-                        <i className="fas fa-eye"></i> 
-                        Project
-                    </a> */}
-                    <a href="#" className="btn-dark">
-                        <i className="fas fa-github"></i> 
+                    <a href="#" className="btn-light">
+                        <i className="fas fa-eye"></i> { }
+                        Project bitztream
+                    </a>
+                    <a href="https://github.com/bitztream/videoplayer-comp" className="btn-dark">
+                        <i className="fas fa-github"></i> { }
                         GitHub
                     </a>
                 </div>
                 <div className="item">
-                    <a href="#!">
+                    <a href="https://github.com/Bungal-ow/Contacts">
                         <img src="https://pcituress.s3-us-west-1.amazonaws.com/pexels-faaiq-ackmerd-1025469.jpg" alt="Project"/>
                     </a>
-                    {/* <a href="#" className="btn-light">
-                        <i className="fas fa-eye"></i> 
-                        Project
-                    </a> */}
-                    <a href="#" className="btn-dark">
-                        <i className="fab fa-github"></i> 
+                    <a href="#" className="btn-light">
+                        <i className="fas fa-eye"></i> { }
+                        Project Bungal-ow
+                    </a>
+                    <a href="https://github.com/Bungal-ow/Contacts" className="btn-dark">
+                        <i className="fab fa-github"></i> { }
                         GitHub
                     </a>
                 </div>
                 <div className="item">
-                    <a href="#!">
+                    <a href="https://github.com/alfredxgxg123/EcomFull">
                         <img src="https://pcituress.s3-us-west-1.amazonaws.com/pexels-faaiq-ackmerd-1025469.jpg" alt="Project"/>
                     </a>
-                    {/* <a href="#" className="btn-light">
-                        <i className="fas fa-eye"></i> 
-                        Project
-                    </a> */}
-                    <a href="#" className="btn-dark">
-                        <i className="fab fa-github"></i> 
+                    <a href="#" className="btn-light">
+                        <i className="fas fa-eye"></i> { }
+                        Project EcomFull
+                    </a>
+                    <a href="https://github.com/alfredxgxg123/EcomFull" className="btn-dark">
+                        <i className="fab fa-github"></i> { }
                         GitHub
                     </a>
                 </div>
                 <div className="item">
-                    <a href="#!">
+                    <a href="https://github.com/alfredxgxg123/miniRecipeBank">
                         <img src="https://pcituress.s3-us-west-1.amazonaws.com/pexels-faaiq-ackmerd-1025469.jpg" alt="Project"/>
                     </a>
-                    {/* <a href="#" className="btn-light">
-                        <i className="fas fa-eye"></i> 
-                        Project
-                    </a> */}
-                    <a href="#" className="btn-dark">
-                        <i className="fab fa-github"></i>
+                    <a href="#" className="btn-light">
+                        <i className="fas fa-eye"></i>  { }
+                        Project RecipeBank
+                    </a>
+                    <a href="https://github.com/alfredxgxg123/miniRecipeBank" className="btn-dark">
+                        <i className="fab fa-github"></i> { }
                         GitHub
                     </a>
                 </div>

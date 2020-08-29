@@ -20,7 +20,7 @@ const AboutMeComp = () => {
                 <img  className="bio-image" src="https://pcituress.s3-us-west-1.amazonaws.com/123123.jpg" alt="Alfred Guan"/>
 
                 <div className="bio">
-                    <h3 class="text-secondary">About Me</h3>
+                    <h3 className="text-secondary">About Me</h3>
                     <p>
                         lorem30 lorem30 lorem30 lorem30 lorem30 lorem30 
                         lorem30 lorem30 lorem30  
