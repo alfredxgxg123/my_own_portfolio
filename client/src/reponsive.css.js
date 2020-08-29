@@ -10,6 +10,11 @@ function mediaSm() {
                         margin-top: 10vh;
                     }
                 }
+                &#work {
+                    .projects {
+                        grid-template-columns: 1fr;
+                    }
+                }
             }
         }
     `
@@ -68,7 +73,12 @@ function mediaMd() {
                 'job3';
                 grid-template-columns: 1fr;
             }
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
+
+
     `
     return css`${styles}`;
 }
@@ -78,7 +88,9 @@ function mediaLg() {
     let styles = '';
     styles = `
         @media screen and (min-width: 769px) and (max-width:1170px) {
-            //
+            .projects {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
     `
     return css`${styles}`;
@@ -89,7 +101,9 @@ function mediaXL() {
     let styles = '';
     styles = `
         @media screen and (min-width: 1171px) {
-            //
+            .projects {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
     `
     return css`${styles}`;

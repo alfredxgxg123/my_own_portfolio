@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 
 const MyProjectsStyle = styled.main`
@@ -43,49 +43,50 @@ const MyProjectsStyle = styled.main`
         }
     }
 
-    .about-info {
+   
+    .projects {
         display: grid;
-        grid-gap: 30px;
-        grid-template-areas: 
-        'bioimage bio bio'
-        'job1 job2 job3';
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.7rem;
+        img {
+            width: 100%;
+            border: 0.5px #fff solid;
+            
+            &:hover {
+                opacity: 0.5;
+                border-color: #3b5998;
+                transition: all 0.6s ease-out;
+            }
+        }
 
-        .bio-image{
-            grid-area: bioimage;
-            margin: auto;
-            border-radius: 10%;
-            width: 200px;
-            height: 250px;
-            border: solid 2px grey;
-        }
+
     
-        .bio {
-            grid-area: bio;
-            font-size: 1.5rem;
-        }
-    
-        .job-1 {
-            grid-area: job1;
-        }
-    
-        .job-2 {
-            grid-area: job2;
-        }
-    
-        .job-3 {
-            grid-area: job3;
-        }
-    
-        .job {
-            background: rgb(68, 68, 100);
-            padding: 0.5rem;
-            border-bottom: grey 3px solid;
-        }
+    }
+    .btn-dark {
+        ${btn()}
+    }
+
+    .btn-light{
+        ${btn()}
     }
 
 
+
 `;
+
+function btn(){
+    let styles = '';
+    styles = `
+        display: inline-block;
+        padding: 0.5rem 0.5rem;
+        border: 0;
+        margin-bottom: 0.3rem;
+        &:hover {
+            background: #3b5998;
+        }
+    `;
+    return css`${styles}`;
+}
 
 export default MyProjectsStyle;
 
