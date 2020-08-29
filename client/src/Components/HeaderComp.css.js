@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 
 const HeaderStyle = styled.header`
@@ -113,10 +113,35 @@ const HeaderStyle = styled.header`
             }
         }
 
+        .nav-link {
+            display: inline-block;
+            font-size: 30px;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            font-weight: 300;
+            color:#fff;
+            text-decoration: none;
+            transition: all 0.5s ease-out;
+
+            &:hover {
+                color: #3b5998;
+            }
+        }
+
     }
-
-
-    
+    ${delay()}
 `;
+
+function delay(){
+    let styles = '';
+    for(let i = 1; i <= 4; i++) {
+        styles += `.nav-item:nth-child(${i}) {
+            transition-delay: ${i * 0.1}s;
+        }`
+    }
+    return css`${styles}`;
+}
+
+
 
 export default HeaderStyle;

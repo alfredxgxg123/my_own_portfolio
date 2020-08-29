@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HeaderComp from './Components/HeaderComp';
 import MainComp from './Components/MainComp';
+import {mediaSm, mediaMd, mediaLg, mediaXL} from './reponsive.css';
 
 const AppDev = styled.div`
   a {
@@ -14,7 +15,11 @@ const AppDev = styled.div`
     z-index: 2;
     width: 100%;
   }
-  
+
+  ${mediaSm()}
+  ${mediaMd()}
+  ${mediaLg()}
+  ${mediaXL()}
 `;
 
 

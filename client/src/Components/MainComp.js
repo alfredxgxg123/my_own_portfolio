@@ -9,7 +9,7 @@ const MainComp = () => {
                 <span className="text-secondary"> Guan</span>
             </h1>
             <h2 className="sm-heading"> 
-                Web Developer, Programer & Software Engineer
+                Full-Stack Developer & Software Engineer
             </h2>
             <div className="icons">
                 <a href="https://github.com/alfredxgxg123">

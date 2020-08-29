@@ -59,12 +59,12 @@ const HeaderComp = () => {
                     </li>
                     <li className="nav-item">
                         <a href="/work.html" className="nav-link">
-                            My Work
+                            My Projects
                         </a>
                     </li>
                     <li className="nav-item">
                         <a href="/contact.html" className="nav-link">
-                            How To Reach Me
+                            Contact Me
                         </a>
                     </li>
                 </ul>
