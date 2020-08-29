@@ -9,7 +9,7 @@ const HeaderStyle = styled.header`
         top: 35px;
         cursor: pointer;
 
-        &: hover {
+        &:hover {
             color: #3b5998;
             transition: all 0.5s ease-out;
         }
@@ -24,7 +24,29 @@ const HeaderStyle = styled.header`
                 transition: all 0.5s ease-out;
             }
         }
+
+        &.close {
+            transform: rotate(180deg);
+            
+            // make an x instead of 3 lines 
+            .btn-line {
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(7px, -6px);
+                }
+            }
+        }
     }
+    
+
+
+    
 `;
 
 export default HeaderStyle;
