@@ -18,6 +18,7 @@ const MyProjectsComp = () => {
                     <a href="http://www.alfredguan.co/">
                         <img src="https://pcituress.s3-us-west-1.amazonaws.com/Screen+Shot+2020-08-30+at+12.10.08+PM.png" alt="Project"/>
                     </a>
+                    
                     <a href="http://www.alfredguan.co/" className="btn-light">
                         <i className="fas fa-eye"></i> { }
                         Personal portfolio
