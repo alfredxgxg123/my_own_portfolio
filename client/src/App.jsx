@@ -7,7 +7,7 @@ import MainComp from './Components/MainComp/MainComp';
 import AboutMeComp from './Components/AboutMeComp/AboutMeComp';
 import MyProjectsComp from './Components/MyProjectsComp/MyProjectsComp';
 import ContactMeComp from './Containers/ContactMeComp/ContactMeComp';
-import {mediaSm, mediaMd, mediaLg, mediaXL} from './reponsive.css';
+import {mediaSm, mediaMd, mediaLg, mediaXL, MobilemediaMd, MobilemediaSm} from './reponsive.css';
 
 
 const AppDev = styled.div`
@@ -35,6 +35,8 @@ const AppDev = styled.div`
   ${mediaMd()}
   ${mediaLg()}
   ${mediaXL()}
+  ${MobilemediaMd()}
+  ${MobilemediaSm()}
 `;
 
 
