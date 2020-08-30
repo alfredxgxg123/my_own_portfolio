@@ -7,20 +7,16 @@ const AboutMeComp = () => {
             <h1 className="lg-heading">
                 About
                 <span className="text-secondary"> Me</span>
-                
             </h1>
             <h2 className="sm-heading"> 
-                Click Here: { } 
-                <a href="https://drive.google.com/file/d/16OgYxFtCVkMh9Ibf5TLYWuVaSl8-x4tm/view?usp=sharing">
-                    <span>My Resume</span>
-                </a>
+                My work expereince...
             </h2>
 
             <div className="about-info">
                 <img  className="bio-image" src="https://pcituress.s3-us-west-1.amazonaws.com/123123.jpg" alt="Alfred Guan"/>
 
                 <div className="bio">
-                    <h3 className="text-secondary">About Me</h3>
+                    <h3 className="text-secondary"></h3>
                     <p>
                         I’m a software engineer with a passion for learning new technology and being able to solve problems that could make an impact on people.
                         I love learning new technologies and building things from scratch. It is always fascinating to see an idea that turns into a product that people can touch and use at the end.

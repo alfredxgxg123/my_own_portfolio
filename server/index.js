@@ -43,7 +43,7 @@ app.post('/send', (req, res) => {
     from: email,
     to: process.env.SECRET_USER,
     subject: name + " " + "has sent you meesage!",
-    text: message
+    text: email + " sent you a message:  " + message
   }
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {

@@ -1,8 +1,9 @@
 {
-  "name": "personal-profilo",
+  "name": "personal-porfoilo",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
+  "homepage": "https://alfredxgxg123.github.io/my_own_portfolio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "buildDev": "webpack -d --watch ",
@@ -10,7 +11,7 @@
     "startPro": "node server/index.js",
     "buildPro": "webpack -d",
     "start": "npm install && npm run buildPro && npm run startPro",
-    "deploy": "gh-pages -d client/dist"
+    "deploy": "npm start && gh-pages -d client/dist"
   },
   "author": "",
   "license": "ISC",

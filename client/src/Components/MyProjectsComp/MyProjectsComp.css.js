@@ -60,6 +60,9 @@ const MyProjectsStyle = styled.main`
         grid-gap: 0.7rem;
         img {
             width: 100%;
+            height: auto;
+            max-width: 400px;
+            min-height: 250px;
             border: 0.5px #fff solid;
             
             &:hover {

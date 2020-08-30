@@ -29,7 +29,7 @@ const ContactMeComp = (props) => {
           }).then((response)=>{
             if (response.data === 'success'){
               alert("Message Sent."); 
-              setState({name: "", email: "", message: ""})
+              setState({name: " ", email: " ", message: " "})
             }else if(response.data === 'fail'){
               alert("Message failed to send.")
             }
