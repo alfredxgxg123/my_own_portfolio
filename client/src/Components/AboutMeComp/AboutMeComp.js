@@ -20,7 +20,8 @@ const AboutMeComp = () => {
                     <p>
                         I’m a software engineer with a passion for learning new technology and being able to solve problems that could make an impact on people.
                         I love learning new technologies and building things from scratch. It is always fascinating to see an idea that turns into a product that people can touch and use at the end.
-                        I have experience with distributed, large-scale, highly available systems/full-stack application and database modeling.
+                    <br></br>
+                        I have experience with distributed, large-scale, single-page or microserver front-end and back-end application and database modeling (with SQL, NoSQL, Java, JavaScript and Python related frameworks and libraies).
                     </p>
                 </div>
                 
@@ -36,7 +37,7 @@ const AboutMeComp = () => {
 
                     </p>
                     <p>
-                        ● Built backend REST APIs and backend system that could handle and support concurrent user CRUDinteractions efficiently with the Node.js and Express.js framework
+                        ● Built backend REST APIs and backend system that could handle and support concurrent user CRUDinteractions efficiently with the Spring Boot, Node.js and Express.js framework
                     </p>
                  
                 </div>
