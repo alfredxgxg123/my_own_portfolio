@@ -9,7 +9,7 @@
     "buildDev": "webpack -d --watch ",
     "startdev": "nodemon server/index.js",
     "startPro": "node server/index.js",
-    "buildPro": "webpack -d",
+    "buildPro": "webpack",
     "start": "npm install && npm run buildPro && npm run startPro",
     "deploy": "npm start && gh-pages -d client/dist"
   },
@@ -32,12 +32,15 @@
     "jquery": "^3.5.1",
     "mysql": "^2.18.1",
     "nodemailer": "^6.4.11",
-    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "uglifyjs-webpack-plugin": "^2.2.0"
   }
 }
