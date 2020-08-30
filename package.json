@@ -37,10 +37,11 @@
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.1",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "uglifyjs-webpack-plugin": "^2.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4",
-    "uglifyjs-webpack-plugin": "^2.2.0"
+    "nodemon": "^2.0.4"
+    
   }
 }
