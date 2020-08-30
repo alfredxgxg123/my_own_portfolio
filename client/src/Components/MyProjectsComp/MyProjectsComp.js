@@ -15,6 +15,20 @@ const MyProjectsComp = () => {
 
             <div className="projects">
                 <div className="item">
+                    <a href="http://www.alfredguan.co/">
+                        <img src="https://pcituress.s3-us-west-1.amazonaws.com/Screen+Shot+2020-08-30+at+12.10.08+PM.png" alt="Project"/>
+                    </a>
+                    <a href="http://www.alfredguan.co/" className="btn-light">
+                        <i className="fas fa-eye"></i> { }
+                        Personal portfolio
+                    </a>
+                    <a href="https://github.com/alfredxgxg123/my_own_portfolio" className="btn-dark">
+                        <i className="fas fa-github"></i> { }
+                        GitHub
+                    </a>
+                </div>
+    
+                <div className="item">
                     <a href="https://www.youtube.com/watch?v=joq4e4U_LHo">
                         <img src="https://pcituress.s3-us-west-1.amazonaws.com/Screen+Shot+2020-08-29+at+10.10.13+PM.png" alt="Project"/>
                     </a>
