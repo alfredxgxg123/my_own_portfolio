@@ -42,8 +42,8 @@ const ContactMeComp = (props) => {
                 <div className="company-info">
                     <h3>Contact { } Me &#128513;</h3>
                     <h5>
-                        <span className="text-secondary"><i className="fa fa-phone"></i>: </span>
-                        (415) 680-8781
+                        <span className="text-secondary"><i className="fa fa-mail"></i>: </span>
+                        alfredguan9@gmail.com
                     </h5>
                 </div>
                 <div className="contact">
