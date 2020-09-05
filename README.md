@@ -1,6 +1,6 @@
 # my_own_portfolio
 
-my_own_portfolio is a React Hook based progressive web application/portfolio page decided to showcase my background and projects for any devices. Please try out both the mobile and web versions.
+my_own_portfolio is a React Hook based progressive web application/portfolio page decided to showcase my background and projects for any devices. Please try out both the mobile and web versions. It is still ongoing.
 
 ## Tech Stack
 
