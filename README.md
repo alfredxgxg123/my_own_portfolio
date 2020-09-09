@@ -8,6 +8,8 @@ my_own_portfolio is a React Hook based progressive web application/portfolio pag
 - Node.js
 - Express.js
 - React Hooks
+- React Container concept
+- React Component concept
 - Styled-Components
 - Webpack
 - Babel
