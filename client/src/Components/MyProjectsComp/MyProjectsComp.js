@@ -30,6 +30,21 @@ const MyProjectsComp = () => {
                 </div>
     
                 <div className="item">
+                    <a href="https://ecomfull.herokuapp.com/">
+                        <img src="https://pcituress.s3-us-west-1.amazonaws.com/Screen+Shot+2020-08-29+at+9.44.39+PM.png" alt="Project"/>
+                    </a>
+                    <a href="https://ecomfull.herokuapp.com/" className="btn-light">
+                        <i className="fas fa-eye"></i> { }
+                        EcomFull
+                    </a>
+                    <a href="https://github.com/alfredxgxg123/EcomFull" className="btn-dark">
+                        <i className="fab fa-github"></i> { }
+                        GitHub
+                    </a>
+                </div>
+        
+        
+                <div className="item">
                     <a href="https://www.youtube.com/watch?v=joq4e4U_LHo">
                         <img src="https://pcituress.s3-us-west-1.amazonaws.com/Screen+Shot+2020-08-29+at+10.10.13+PM.png" alt="Project"/>
                     </a>
@@ -51,19 +66,6 @@ const MyProjectsComp = () => {
                         Bungal-ow
                     </a>
                     <a href="https://github.com/Bungal-ow/Contacts" className="btn-dark">
-                        <i className="fab fa-github"></i> { }
-                        GitHub
-                    </a>
-                </div>
-                <div className="item">
-                    <a href="https://www.youtube.com/watch?v=nBU2P06DAlg">
-                        <img src="https://pcituress.s3-us-west-1.amazonaws.com/Screen+Shot+2020-08-29+at+9.44.39+PM.png" alt="Project"/>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=nBU2P06DAlg" className="btn-light">
-                        <i className="fas fa-eye"></i> { }
-                        EcomFull
-                    </a>
-                    <a href="https://github.com/alfredxgxg123/EcomFull" className="btn-dark">
                         <i className="fab fa-github"></i> { }
                         GitHub
                     </a>
