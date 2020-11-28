@@ -39,7 +39,7 @@ transporter.verify((error, success) => {
 app.post('/api/post', (req, res)=> {
   console.log(req.body)
   content = req.body
-  res.status(200).json(content);
+  res.status(200).send(req);
 })
 
 app.post('/send', (req, res) => {
