@@ -36,6 +36,11 @@ transporter.verify((error, success) => {
 });
 
 
+app.post('/api/post', (req, res)=> {
+  console.log(req.body)
+  content = req.body
+  res.status(200).json(content);
+})
 
 app.post('/send', (req, res) => {
   const {name, email, message} = req.body;
